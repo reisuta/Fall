@@ -1,0 +1,27 @@
+ja:
+  title:
+    aim:
+      index: 目標一覧
+      show: 目標詳細
+      new: 目標新規作成
+      edit: 目標編集
+  activerecord:
+    attributes:
+      aim:
+        title: タイトル
+        reason: 理由
+        advantage: 得られるもの
+        difficulty: 難易度
+        started_at: 開始日時
+        ended_at: 終了日時
+    errors:
+      models:
+        aim:
+          attributes:
+            title:
+              blank: は必須項目です
+            reason:
+              blank: は必須項目です
+            advantage:
+              blank: は必須項目です
+
