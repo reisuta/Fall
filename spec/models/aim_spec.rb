@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Aim, type: :model do
-  describe "validation" do
-    context "作成できない" do
+  describe 'validation' do
+    context '作成できない' do
       it 'タイトルが空のとき、作成できない' do
         aim = build(:aim, title: '')
         expect(aim).not_to be_valid

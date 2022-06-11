@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "aims#index"
+  root 'aims#index'
   resources 'aims'
   resources 'subscriptions'
   resources 'mobile_contracts'
