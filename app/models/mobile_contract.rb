@@ -1,0 +1,2 @@
+class MobileContract < ApplicationRecord
+end
