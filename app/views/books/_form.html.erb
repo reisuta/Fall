@@ -1,23 +1,28 @@
 <%= form_with(model: @book, local: true) do |f| %>
     <%= render "shared/error_messages", model: @book %>
     <div class="form-group mb-3">
-      <%= f.label :title, '目標名', class: 'form-label background-color' %>
+      <%= f.label :title, '書籍名', class: 'form-label background-color' %>
       <%= f.text_field :title, class: 'form-control', readonly: action==='show' %>
     </div>
   
     <div class="form-group mb-3">
-      <%= f.label :reason, '理由', class: 'form-label background-color' %>
-      <%= f.text_area :reason, class: 'form-control', readonly: action==='show' %>
+      <%= f.label :author, '著者', class: 'form-label background-color' %>
+      <%= f.text_field :author, class: 'form-control', readonly: action==='show' %>
     </div>
   
     <div class="form-group mb-3">
-      <%= f.label :advantage, '得られるもの', class: 'form-label background-color' %>
-      <%= f.text_area :advantage, class: 'form-control', readonly: action==='show' %>
+      <%= f.label :amount, '金額', class: 'form-label background-color' %>
+      <%= f.number_field :amount, class: 'form-control', readonly: action==='show' %>
     </div>
   
     <div class="form-group mb-3">
-      <%= f.label :difficulty, '難易度', class: 'form-label background-color' %>
-      <%= f.text_field :difficulty, class: 'form-control', readonly: action==='show' %>
+      <%= f.label :is_library, '図書館フラグ', class: 'form-label background-color' %>
+      <%= f.text_field :is_library, class: 'form-control', readonly: action==='show' %>
+    </div>
+  
+    <div class="form-group mb-3">
+      <%= f.label :bought_at, '購入日時', class: 'form-label background-color' %>
+      <%= f.datetime_field :bought_at, class: 'form-control', readonly: action==='show' %>
     </div>
   
     <div class="form-group mb-3">

@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :subscription do
-    name { 'MyString' }
-    month_cost { 1 }
+    name { 'Netflix' }
+    month_cost { 1000 }
     importance { 1 }
-    alternative { 'MyText' }
+    alternative { 'Youtube' }
   end
 end
