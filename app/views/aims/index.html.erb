@@ -9,6 +9,9 @@
   <div class="col-md-4">
     <%= f.label :title_cont, '目標名', class: 'form-label' %>
     <%= f.search_field :title_cont, class: 'form-control' %>
+    
+    <%= f.label :categories_name_cont, 'カテゴリー名', class: 'form-label' %>
+    <%= f.search_field :categories_name_cont, class: 'form-control' %>
 
     <%= f.label :started_at_gteq, '開始日時', class: 'form-label' %>
     <%= f.datetime_field :started_at_gteq, class: 'form-control' %>

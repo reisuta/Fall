@@ -3,6 +3,7 @@ class Aim < ApplicationRecord
   validates :reason, presence: true
   validates :advantage, presence: true
   validate :ended_at_validation
+  has_many :categories
 end
 
 def ended_at_validation

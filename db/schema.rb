@@ -38,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_11_020504) do
   end
 
   create_table "categories", force: :cascade do |t|
+    t.integer "aim_id", null: false, comment: "目標ID"
     t.string "name", null: false, comment: "カテゴリー名"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
