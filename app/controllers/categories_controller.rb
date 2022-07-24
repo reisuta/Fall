@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-      flash[:success] = '目標を作成しました'
+      flash[:success] = 'カテゴリーを作成しました'
       redirect_to categories_path
     else
       render 'new', status: :unprocessable_entity
@@ -28,7 +28,7 @@ class CategoriesController < ApplicationController
 
   def update
     if @category.update(category_params)
-      flash[:success] = '目標を更新しました'
+      flash[:success] = 'カテゴリーを更新しました'
       redirect_to category_path(@category.id)
     else
       render 'edit', status: :unprocessable_entity
@@ -37,7 +37,7 @@ class CategoriesController < ApplicationController
 
   def destroy
     @category.destroy
-    flash[:success] = '目標を削除しました'
+    flash[:success] = 'カテゴリーを削除しました'
     redirect_to categories_path
   end
 

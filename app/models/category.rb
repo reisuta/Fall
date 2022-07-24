@@ -1,4 +1,5 @@
 class Category < ApplicationRecord
   validates :name, presence: true
-  belongs_to :aim
+  has_many :aim_categories
+  has_many :aims, through: :aim_categories
 end

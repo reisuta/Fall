@@ -47,6 +47,6 @@ class AimsController < ApplicationController
     end
 
     def aim_params
-      params.require(:aim).permit(:title, :reason, :advantage, :difficulty, :started_at, :ended_at)
+      params.require(:aim).permit(:title, :reason, :advantage, :difficulty, :started_at, :ended_at, { category_ids: [] })
     end
 end

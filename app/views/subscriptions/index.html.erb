@@ -47,7 +47,7 @@
       <td><%= subscription.importance %></td>
       <td><%= subscription.alternative %></td>
       <td><%= link_to '編集', edit_subscription_path(subscription.id), class: 'btn btn-primary' %></td>
-      <td><%= button_to '削除', subscription_path(subscription.id), method: :delete, form:{ data: { turbo_confirm: "目標を削除します。よろしいですか？" }}, class: 'btn btn-danger' %></td>
+      <td><%= button_to '削除', subscription_path(subscription.id), method: :delete, form: { data: { turbo_confirm: "サブスクリプションを削除します。よろしいですか？" }}, class: 'btn btn-danger' %></td>
     </tr>
   <% end %>
 </table>
